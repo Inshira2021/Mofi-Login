@@ -1,1 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
 @import "tailwindcss";
+
+html, body, #root {
+	height: 100%;
+}
+
+body {
+	font-family: "Inter", system-ui, sans-serif;
+	@apply bg-gradient-to-br from-gray-950 via-gray-900 to-black text-white antialiased;
+	background-attachment: fixed;
+}
+
+/* Smooth scrollbar styling */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: #0f0f17; }
+::-webkit-scrollbar-thumb { background: #3c3f46; border-radius: 6px; }
+::-webkit-scrollbar-thumb:hover { background: #50545c; }
+
+/* Utility helpers */
+.glass-panel { @apply bg-gray-800/80 backdrop-blur-md border border-gray-700; }
+.gradient-text { @apply bg-gradient-to-r from-teal-400 to-cyan-300 text-transparent bg-clip-text; }
